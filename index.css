@@ -31,8 +31,13 @@ img {
   transform: translate(4px, 4px);
 }
 
+section h2{
+  
+}
+
 .container {
   display: flex;
+  justify-content: center;
   max-width: 700px;
   margin: 0 auto;
 }
@@ -65,17 +70,20 @@ nav{
 /*Feature sections*/
 
 .feature{
+  background: #a29bfe; 
+  /*belki sonra yukarıdaki background değiştiririm*/
   border-radius: 20px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-  margin: 20px 1.66%;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+  margin: 30px 1.66%;
   padding: 10px;
   width: 30%; 
   text-align: center;
 }
 
 .feature i{
-  color: #a29bfe;
+/*   color: #a29bfe; */
   font-size: 40px;
+  margin-top: 20px;
 }
 
 .feature h2{
