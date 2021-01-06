@@ -14,6 +14,10 @@ img {
   max-width: 100%
 }
 
+.bg-purple{
+  background-color: #a29bfe;
+}
+
 .btn{
   background-color: #a29bfe;
   border-radius: 10px;
@@ -21,9 +25,17 @@ img {
   color: black;
   display: inline-block;
   text-decoration: none;
+  font-size: 16px;
   padding: 10px 25px;
   position: relative;
   transition: all 0.08s ease;
+}
+
+.btn-ghost{
+  background-color: black;
+  color: #a29bfe;
+  box-shadow: none;
+  border: none;
 }
 
 .btn:active {
@@ -31,8 +43,13 @@ img {
   transform: translate(4px, 4px);
 }
 
+.btn-ghost:active{
+  transform: none;
+}
+
 section h2{
-  
+  text-align: center;
+  margin-top: 40px;
 }
 
 .container {
@@ -74,7 +91,7 @@ nav{
   /*belki sonra yukarıdaki background değiştiririm*/
   border-radius: 20px;
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
-  margin: 30px 1.66%;
+  margin: 0 1.66%;
   padding: 10px;
   width: 30%; 
   text-align: center;
@@ -94,4 +111,36 @@ nav{
 .feature p {
   font-size: 14px;
   line-height: 24px;
+}
+
+/* try */
+form{
+  margin-bottom 40px;
+}
+
+form-flex{
+  display: flex;
+}
+
+form input{
+  background-color: white;
+  border: 0;
+  border-radius: 5px;
+  color: black;
+  display: inline-block;
+  font-size: 14px;
+  padding: 10px 35px;
+  flex: 1;
+  margin-right: 10px;
+}
+
+footer{
+  background-color: white;
+  color: #a29bfe;
+  padding: 10px;
+  text-align: center;
+}
+
+footer .fa-heart{
+  color: red;
 }
