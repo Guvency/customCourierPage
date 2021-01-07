@@ -6,9 +6,13 @@
 
 body{
   font-family: 'Roboto', sans-serif;
-  margin: 0;
+  margin: 60px 0 0;
   line-height: 1.4;
 } 
+
+iframe{
+  margin-bottom: 30px;
+}
 
 img {
   max-width: 100%
@@ -55,6 +59,7 @@ section h2{
 .container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   max-width: 700px;
   margin: 0 auto;
 }
@@ -62,8 +67,13 @@ section h2{
 nav{
   background-color: #a29bfe;
   display: flex;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   justify-content: center;
   padding: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .nav-link{
@@ -115,11 +125,12 @@ nav{
 
 /* try */
 form{
-  margin-bottom 40px;
+  margin-bottom: 40px;
 }
 
 form-flex{
   display: flex;
+  flex-wrap: wrap;
 }
 
 form input{
@@ -135,7 +146,7 @@ form input{
 }
 
 footer{
-  background-color: white;
+  background-color: black;
   color: #a29bfe;
   padding: 10px;
   text-align: center;
@@ -143,4 +154,36 @@ footer{
 
 footer .fa-heart{
   color: red;
+}
+
+/*eğer kullanılan media 1000px ve aşağısı ise bu özellikler ile yukarıdaki kodu güncelle demiş olduk*/
+@media (max-width: 999px){
+  .header-left, .header-right{
+    width: 100%;
+  }
+  
+  .header-rigth{
+    order: 0;
+  }
+  
+  .header-left{
+    order: 1;
+    text-align: center;
+    padding-left: 20px;
+  }
+  
+  .btn{
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+  
+  .feature {
+    margin: 10px;
+    width: 100%;
+  }
+  
+  .flex input, .flex .btn-ghost{
+    margin: 5px 10px;
+    width: 100%;
+  }
 }
